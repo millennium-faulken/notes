@@ -24,6 +24,7 @@ class NotesList extends Component {
             <div className="singleNote" key={note._id}>
               <Link to={`/note/${note._id}`} className="noteList">
                 <div className="noteTitle">{note.title}</div>
+                <hr></hr>
                 <div className="noteContent">{note.content}</div>
               </Link>
             </div>

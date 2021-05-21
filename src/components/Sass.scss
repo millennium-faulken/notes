@@ -1,7 +1,7 @@
 // App
 
 .App {
-  background-color: #24969B;
+  background-color: #24969b;
   height: 100vh;
 }
 
@@ -22,22 +22,30 @@
     border-radius: 5px;
     padding: 20px;
     margin: 10px;
-    background-color: #9e8155d5;
+    background-color: #9e8155e5;
 
     a {
       text-decoration: none;
     }
 
     .noteTitle {
+      font-family: 'Caveat', cursive;
       color: black;
       font-weight: bolder;
-      font-size: large;
-      text-decoration: underline;
+      font-size: x-large;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background: rgb(0, 0, 0);
+      background-image: linear-gradient(to right, #9e8155, rgb(0, 0, 0), #9e8155);
     }
 
     .noteContent {
       color: white;
       font-size: medium;
+      font-family: 'Raleway', sans-serif;
     }
   }
 }
@@ -59,11 +67,18 @@
 
   .header {
     margin: 10px 0 0 25px;
+    font-family: "Caveat", cursive;
+    font-size: 40px;
   }
 
   .links {
     display: flex;
-    margin: 10px 0 10px 25px;
+    margin: 0px 0 10px 25px;
+    font-family: "Open Sans", sans-serif;
+
+    a {
+      color: black;
+    }
 
     .notesLink {
       margin-right: 20px;
@@ -73,7 +88,4 @@
 
 // Single note view
 
-
-
 // Create note
-
