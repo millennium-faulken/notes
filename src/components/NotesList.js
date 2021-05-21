@@ -21,12 +21,8 @@ class NotesList extends Component {
         <NavBar />
         <div className="listing">
           {this.props.notes.map((note) => (
-            <div className="singleNote">
-              <Link
-                to={`/note/${note._id}`}
-                key={note._id}
-                className="noteList"
-              >
+            <div className="singleNote" key={note._id}>
+              <Link to={`/note/${note._id}`} className="noteList">
                 <div className="noteTitle">{note.title}</div>
                 <div className="noteContent">{note.content}</div>
               </Link>

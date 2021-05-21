@@ -8,7 +8,7 @@ class NavBar extends Component {
       <div className="NavBarContainer">
         <h1 className="header">Notes</h1>
         <div className="links">
-          <Link to="/notes" style={{ textDecoration: "none" }}>
+          <Link to="/" style={{ textDecoration: "none" }}>
             <h3 className="notesLink">Notes</h3>
           </Link>
           <Link to="/create" style={{ textDecoration: "none" }}>
