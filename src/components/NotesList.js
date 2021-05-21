@@ -7,8 +7,9 @@ import "./Notes.css";
 
 class NotesList extends Component {
   state = {
-    title: "",
+    note: "",
     content: "",
+    name: "",
   };
 
   componentDidMount() {
@@ -26,6 +27,11 @@ class NotesList extends Component {
                 <div className="noteTitle">{note.title}</div>
                 <hr></hr>
                 <div className="noteContent">{note.content}</div>
+                {note.name ? (
+                  <div className="noteAuthor">- {note.name}</div>
+                ) : (
+                  <div className="anon">- Anonymous</div>
+                )}
               </Link>
             </div>
           ))}

@@ -2,7 +2,8 @@
 
 .App {
   background-color: #24969b;
-  height: 100vh;
+  max-height: 100%;
+  min-height: 100vh;
 }
 
 // Notes List
@@ -29,7 +30,7 @@
     }
 
     .noteTitle {
-      font-family: 'Caveat', cursive;
+      font-family: "Caveat", cursive;
       color: black;
       font-weight: bolder;
       font-size: x-large;
@@ -39,13 +40,34 @@
       border: 0;
       height: 1px;
       background: rgb(0, 0, 0);
-      background-image: linear-gradient(to right, #9e8155, rgb(0, 0, 0), #9e8155);
+      background-image: linear-gradient(
+        to right,
+        #9e8155,
+        rgb(0, 0, 0),
+        #9e8155
+      );
     }
 
     .noteContent {
       color: white;
       font-size: medium;
-      font-family: 'Raleway', sans-serif;
+      font-family: "Raleway", sans-serif;
+    }
+
+    .anon {
+      color: white;
+      font-size: large;
+      font-family: "Raleway", sans-serif;
+      margin-top: 5px;
+    }
+
+    .noteAuthor {
+      color: white;
+      font-size: medium;
+      font-family: "Raleway", sans-serif;
+      margin-top: 5px;
+      font-family: 'Allura', cursive;
+      font-size: xx-large;
     }
   }
 }
