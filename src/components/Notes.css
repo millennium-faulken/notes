@@ -122,11 +122,12 @@
       .createNoteContainer .inputFields .detectedBadWord {
         text-align: center;
         font-size: 3vw;
-        padding: 75px 25px 75px 25px; } }
+        padding: 50px 15px 50px 15px; } }
     @media (max-width: 400px) {
       .createNoteContainer .inputFields .detectedBadWord {
         text-align: center;
-        font-size: 8vw;
-        padding: 75px 25px 75px 25px; } }
+        width: 80%;
+        font-size: 7vw;
+        padding: 25px 5px 25px 5px; } }
 
 /*# sourceMappingURL=Notes.css.map */
