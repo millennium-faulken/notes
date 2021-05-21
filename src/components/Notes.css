@@ -118,5 +118,15 @@
       font-size: 2vw;
       z-index: 500;
       position: absolute; }
+    @media (max-width: 800px) {
+      .createNoteContainer .inputFields .detectedBadWord {
+        text-align: center;
+        font-size: 3vw;
+        padding: 75px 25px 75px 25px; } }
+    @media (max-width: 400px) {
+      .createNoteContainer .inputFields .detectedBadWord {
+        text-align: center;
+        font-size: 8vw;
+        padding: 75px 25px 75px 25px; } }
 
 /*# sourceMappingURL=Notes.css.map */

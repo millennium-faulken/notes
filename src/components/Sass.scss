@@ -1,5 +1,6 @@
+$smallScreen: 800px;
+$iphone: 400px;
 // App
-
 .App {
   background-color: #24969b;
   max-height: 100%;
@@ -170,6 +171,20 @@
       font-size: 2vw;
       z-index: 500;
       position: absolute;
+    }
+    @media (max-width: $smallScreen) {
+      .detectedBadWord {
+        text-align: center;
+        font-size: 3vw;
+        padding: 75px 25px 75px 25px;
+      }
+    }
+    @media (max-width: $iphone) {
+      .detectedBadWord {
+        text-align: center;
+        font-size: 8vw;
+        padding: 75px 25px 75px 25px;
+      }
     }
   }
 }

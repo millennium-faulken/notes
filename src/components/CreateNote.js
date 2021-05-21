@@ -104,7 +104,7 @@ class CreateNote extends Component {
             </button>
             {this.state.badWord && (
               <div className="detectedBadWord">
-                Bad word detected, your message was not submitted!
+                Bad word detected! Your message was not submitted.
               </div>
             )}
           </div>
