@@ -6,7 +6,7 @@ class NavBar extends Component {
   render() {
     return (
       <div className="NavBarContainer">
-        <h1 className="header">Messages to the no one...</h1>
+        <h1 className="header">Messages to no one...</h1>
         <div className="links">
           <Link to="/" style={{ textDecoration: "none" }}>
             <h3 className="notesLink">Messages</h3>

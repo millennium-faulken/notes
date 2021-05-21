@@ -18,6 +18,7 @@ class NoteView extends Component {
         <div>
           <div className="oneTitle">{this.props.note.title}</div>
           <div className="oneContent">{this.props.note.content}</div>
+          <div className="oneName">{this.props.note.name}</div>
         </div>
       </div>
     );
