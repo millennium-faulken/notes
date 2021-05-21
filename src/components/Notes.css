@@ -117,6 +117,8 @@
     .noteView .oneContent {
       font-size: large; }
     .noteView .oneName {
+      font-size: xx-large; }
+    .noteView .anon {
       font-size: xx-large; } }
 .createNoteContainer {
   width: 50%;
