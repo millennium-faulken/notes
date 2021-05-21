@@ -41,6 +41,9 @@ class CreateNote extends Component {
     );
     if (badWord.length) {
       this.setState({ badWord: true });
+      setTimeout(() => {
+        this.setState({ badWord: false });
+      }, 3000);
     } else {
       this.props.createNote({
         title: this.state.title,
@@ -77,7 +80,6 @@ class CreateNote extends Component {
                 this.setState({ [e.target.name]: e.target.value })
               }
             />
-
             <textarea
               type="text"
               className="content"
@@ -92,6 +94,7 @@ class CreateNote extends Component {
 
             <button
               className="saveButton"
+              disabled={!this.state.content + !this.state.title}
               onClick={() => {
                 this.badWordCheck();
                 this.setState({ title: "", content: "", name: "" });
@@ -100,7 +103,9 @@ class CreateNote extends Component {
               Submit
             </button>
             {this.state.badWord && (
-              <div>Bad word detected, your message was not submitted!</div>
+              <div className="detectedBadWord">
+                Bad word detected, your message was not submitted!
+              </div>
             )}
           </div>
         </div>

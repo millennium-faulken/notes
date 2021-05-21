@@ -133,8 +133,10 @@
       height: 40px;
       width: 350px;
       border-radius: 5px;
-    font-family: "Open Sans", sans-serif;
-
+      font-family: "Open Sans", sans-serif;
+      border-style: none;
+      text-indent: 5px;
+      border: 1px solid black;
     }
 
     textarea {
@@ -143,8 +145,11 @@
       width: 350px;
       border-radius: 5px;
       resize: none;
-    font-family: "Open Sans", sans-serif;
-
+      font-family: "Open Sans", sans-serif;
+      text-indent: 5px;
+      padding-top: 10px;
+      border-style: none;
+      border: 1px solid black;
     }
 
     button {
@@ -153,6 +158,18 @@
       margin-top: 15px;
       border-radius: 5px;
       background-color: white;
+    }
+
+    .detectedBadWord {
+      border: 1px solid black;
+      padding: 100px 50px 100px 50px;
+      background-color: white;
+      font-family: "Raleway", sans-serif;
+      border-radius: 5px;
+      color: red;
+      font-size: 2vw;
+      z-index: 500;
+      position: absolute;
     }
   }
 }
