@@ -110,6 +110,72 @@ $iphone: 400px;
 }
 
 // Single note view
+.noteView {
+  width: 50%;
+  margin: 50px auto 0 auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #9e8155e5;
+  padding: 25px;
+
+  .oneTitle {
+    font-family: "Caveat", cursive;
+    color: black;
+    font-weight: bolder;
+    font-size: 50px;
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    background: rgb(0, 0, 0);
+    background-image: linear-gradient(to right, #9e8155, rgb(0, 0, 0), #9e8155);
+  }
+
+  .oneContent {
+    color: white;
+    font-size: xx-large;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .oneName {
+    color: white;
+    font-size: medium;
+    font-family: "Raleway", sans-serif;
+    margin-top: 5px;
+    font-family: "Allura", cursive;
+    font-size: 50px;
+  }
+}
+
+@media (max-width: $smallScreen) {
+  .noteView {
+    .oneTitle {
+      font-size: 40px;
+    }
+
+    .oneContent {
+      font-size: x-large;
+    }
+  }
+}
+
+@media (max-width: $iphone) {
+  .noteView {
+    width: 80%;
+    .oneTitle {
+      font-size: 30px;
+    }
+
+    .oneContent {
+      font-size: large;
+    }
+
+    .oneName {
+      font-size: xx-large;
+    }
+  }
+}
 
 // Create note
 

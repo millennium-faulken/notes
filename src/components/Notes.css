@@ -70,6 +70,49 @@
     .NavBarContainer .links .notesLink {
       margin-right: 20px; }
 
+.noteView {
+  width: 50%;
+  margin: 50px auto 0 auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #9e8155e5;
+  padding: 25px; }
+  .noteView .oneTitle {
+    font-family: "Caveat", cursive;
+    color: black;
+    font-weight: bolder;
+    font-size: 50px; }
+  .noteView hr {
+    border: 0;
+    height: 1px;
+    background: black;
+    background-image: linear-gradient(to right, #9e8155, black, #9e8155); }
+  .noteView .oneContent {
+    color: white;
+    font-size: xx-large;
+    font-family: "Raleway", sans-serif; }
+  .noteView .oneName {
+    color: white;
+    font-size: medium;
+    font-family: "Raleway", sans-serif;
+    margin-top: 5px;
+    font-family: "Allura", cursive;
+    font-size: 50px; }
+
+@media (max-width: 800px) {
+  .noteView .oneTitle {
+    font-size: 40px; }
+  .noteView .oneContent {
+    font-size: x-large; } }
+@media (max-width: 400px) {
+  .noteView {
+    width: 80%; }
+    .noteView .oneTitle {
+      font-size: 30px; }
+    .noteView .oneContent {
+      font-size: large; }
+    .noteView .oneName {
+      font-size: xx-large; } }
 .createNoteContainer {
   width: 50%;
   margin: auto; }

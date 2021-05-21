@@ -14,11 +14,15 @@ class NoteView extends Component {
     return (
       <div>
         <NavBar />
-        <div className="noteView"></div>
-        <div>
+        <div className="noteView">
           <div className="oneTitle">{this.props.note.title}</div>
+          <hr></hr>
           <div className="oneContent">{this.props.note.content}</div>
-          <div className="oneName">{this.props.note.name}</div>
+          {this.props.note.name ? (
+            <div className="oneName">- {this.props.note.name}</div>
+          ) : (
+            <div className="anon">- Anonymous</div>
+          )}
         </div>
       </div>
     );
