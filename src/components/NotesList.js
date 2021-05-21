@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { getNotes, deleteNote } from "../actions";
+import { getNotes } from "../actions";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import NavBar from "./NavBar";
@@ -42,4 +42,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps, { getNotes, deleteNote })(NotesList);
+export default connect(mapStateToProps, { getNotes })(NotesList);

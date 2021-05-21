@@ -3,6 +3,7 @@ import { Route } from "react-router-dom";
 import NotesList from "./NotesList";
 import CreateNote from "./CreateNote";
 import NoteView from "./NoteView";
+import "./Notes.css"
 
 class App extends Component {
   render() {

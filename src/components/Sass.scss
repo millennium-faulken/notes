@@ -1,18 +1,79 @@
+// App
+
+.App {
+  background-color: #24969B;
+  height: 100vh;
+}
+
+// Notes List
+
 .listing {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   align-content: flex-start;
   width: 80%;
-  margin: auto;
+  margin: 25px auto 0 auto;
 
   .singleNote {
-    // max-width: 30vh;
     flex: 200px;
     min-height: 20vh;
     border: 1px solid black;
     border-radius: 5px;
     padding: 20px;
     margin: 10px;
+    background-color: #9e8155d5;
+
+    a {
+      text-decoration: none;
+    }
+
+    .noteTitle {
+      color: black;
+      font-weight: bolder;
+      font-size: large;
+      text-decoration: underline;
+    }
+
+    .noteContent {
+      color: white;
+      font-size: medium;
+    }
   }
 }
+
+// Nav
+
+.NavBarContainer {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid black;
+  background-color: #86aa38;
+  -webkit-box-shadow: 0px 1px 5px rgb(0, 0, 0);
+  -moz-box-shadow: 0px 1px 5px rgb(0, 0, 0);
+  box-shadow: 0px 1px 5px rgb(0, 0, 0);
+
+  h3 {
+    margin: 0;
+  }
+
+  .header {
+    margin: 10px 0 0 25px;
+  }
+
+  .links {
+    display: flex;
+    margin: 10px 0 10px 25px;
+
+    .notesLink {
+      margin-right: 20px;
+    }
+  }
+}
+
+// Single note view
+
+
+
+// Create note
+

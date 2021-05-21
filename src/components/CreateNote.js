@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import { createNote } from '../actions';
 import { connect } from 'react-redux';
-import './CreateNote.css';
+import './Notes.css';
 import NavBar from './NavBar';
 
 class CreateNote extends Component {
   state = {
     title: '',
     content: '',
-    id: Number
   };
 
   render() {
