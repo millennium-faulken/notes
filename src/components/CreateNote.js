@@ -55,44 +55,41 @@ class CreateNote extends Component {
       <div>
         <NavBar />
         <div className="createNoteContainer">
-          <h3 className="headerNotes">Create New Note:</h3>
+          <h3 className="headerNotes">Write a message:</h3>
           <div className="inputFields">
-            <div className="inputTitle">
-              <input
-                type="text"
-                className="title"
-                name="name"
-                value={this.state.name}
-                placeholder="Name (optional)"
-                onChange={(e) =>
-                  this.setState({ [e.target.name]: e.target.value })
-                }
-              />
-              <input
-                type="text"
-                className="title"
-                name="title"
-                value={this.state.title}
-                placeholder="Note Title"
-                onChange={(e) =>
-                  this.setState({ [e.target.name]: e.target.value })
-                }
-              />
+            <input
+              type="text"
+              className="title"
+              name="name"
+              value={this.state.name}
+              placeholder="Name (optional)"
+              onChange={(e) =>
+                this.setState({ [e.target.name]: e.target.value })
+              }
+            />
+            <input
+              type="text"
+              className="title"
+              name="title"
+              value={this.state.title}
+              placeholder="Message title"
+              onChange={(e) =>
+                this.setState({ [e.target.name]: e.target.value })
+              }
+            />
 
-              <textarea
-                type="text"
-                className="content"
-                maxLength="300"
-                name="content"
-                value={this.state.content}
-                placeholder="Note Content"
-                onChange={(e) =>
-                  this.setState({ [e.target.name]: e.target.value })
-                }
-              ></textarea>
-            </div>
-          </div>
-          <div>
+            <textarea
+              type="text"
+              className="content"
+              maxLength="300"
+              name="content"
+              value={this.state.content}
+              placeholder="Message"
+              onChange={(e) =>
+                this.setState({ [e.target.name]: e.target.value })
+              }
+            ></textarea>
+
             <button
               className="saveButton"
               onClick={() => {
@@ -100,7 +97,7 @@ class CreateNote extends Component {
                 this.setState({ title: "", content: "", name: "" });
               }}
             >
-              Save
+              Submit
             </button>
             {this.state.badWord && (
               <div>Bad word detected, your message was not submitted!</div>

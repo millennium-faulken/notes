@@ -44,7 +44,7 @@
       font-size: medium;
       font-family: "Raleway", sans-serif;
       margin-top: 5px;
-      font-family: 'Allura', cursive;
+      font-family: "Allura", cursive;
       font-size: x-large; }
 
 .NavBarContainer {
@@ -69,5 +69,37 @@
       color: black; }
     .NavBarContainer .links .notesLink {
       margin-right: 20px; }
+
+.createNoteContainer {
+  width: 50%;
+  margin: auto; }
+  .createNoteContainer h3 {
+    font-family: "Caveat", cursive;
+    font-size: xx-large;
+    margin-bottom: 10px; }
+  .createNoteContainer .inputFields {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+    .createNoteContainer .inputFields input {
+      margin-top: 15px;
+      height: 40px;
+      width: 350px;
+      border-radius: 5px;
+      font-family: "Open Sans", sans-serif; }
+    .createNoteContainer .inputFields textarea {
+      margin-top: 15px;
+      height: 100px;
+      width: 350px;
+      border-radius: 5px;
+      resize: none;
+      font-family: "Open Sans", sans-serif; }
+    .createNoteContainer .inputFields button {
+      width: 100px;
+      height: 30px;
+      margin-top: 15px;
+      border-radius: 5px;
+      background-color: white; }
 
 /*# sourceMappingURL=Notes.css.map */

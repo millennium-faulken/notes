@@ -66,7 +66,7 @@
       font-size: medium;
       font-family: "Raleway", sans-serif;
       margin-top: 5px;
-      font-family: 'Allura', cursive;
+      font-family: "Allura", cursive;
       font-size: x-large;
     }
   }
@@ -111,3 +111,48 @@
 // Single note view
 
 // Create note
+
+.createNoteContainer {
+  width: 50%;
+  margin: auto;
+
+  h3 {
+    font-family: "Caveat", cursive;
+    font-size: xx-large;
+    margin-bottom: 10px;
+  }
+
+  .inputFields {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    input {
+      margin-top: 15px;
+      height: 40px;
+      width: 350px;
+      border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
+
+    }
+
+    textarea {
+      margin-top: 15px;
+      height: 100px;
+      width: 350px;
+      border-radius: 5px;
+      resize: none;
+    font-family: "Open Sans", sans-serif;
+
+    }
+
+    button {
+      width: 100px;
+      height: 30px;
+      margin-top: 15px;
+      border-radius: 5px;
+      background-color: white;
+    }
+  }
+}
