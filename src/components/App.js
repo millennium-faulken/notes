@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./App.css";
 import { Route } from "react-router-dom";
 import NotesList from "./NotesList";
 import CreateNote from "./CreateNote";

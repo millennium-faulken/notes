@@ -31,6 +31,7 @@ class CreateNote extends Component {
             <textarea
                 type="text"
                 className="content"
+                maxLength="300"
                 name="content"
                 value={this.state.content}
                 placeholder="Note Content" 
