@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { createNote } from "../actions";
 import { connect } from "react-redux";
 import "./Notes.css";
-import NavBar from "./NavBar";
 
 class CreateNote extends Component {
   state = {
@@ -55,59 +54,50 @@ class CreateNote extends Component {
 
   render() {
     return (
-      <div>
-        <NavBar />
-        <div className="createNoteContainer">
-          <h3 className="headerNotes">Write a message:</h3>
-          <div className="inputFields">
-            <input
-              type="text"
-              className="title"
-              name="name"
-              value={this.state.name}
-              placeholder="Name (optional)"
-              onChange={(e) =>
-                this.setState({ [e.target.name]: e.target.value })
-              }
-            />
-            <input
-              type="text"
-              className="title"
-              name="title"
-              value={this.state.title}
-              placeholder="Message title"
-              onChange={(e) =>
-                this.setState({ [e.target.name]: e.target.value })
-              }
-            />
-            <textarea
-              type="text"
-              className="content"
-              maxLength="300"
-              name="content"
-              value={this.state.content}
-              placeholder="Message"
-              onChange={(e) =>
-                this.setState({ [e.target.name]: e.target.value })
-              }
-            ></textarea>
+      <div className="createNoteContainer">
+        <h3 className="headerNotes">Write a message:</h3>
+        <div className="inputFields">
+          <input
+            type="text"
+            className="title"
+            name="name"
+            value={this.state.name}
+            placeholder="Name (optional)"
+            onChange={(e) => this.setState({ [e.target.name]: e.target.value })}
+          />
+          <input
+            type="text"
+            className="title"
+            name="title"
+            value={this.state.title}
+            placeholder="Message title"
+            onChange={(e) => this.setState({ [e.target.name]: e.target.value })}
+          />
+          <textarea
+            type="text"
+            className="content"
+            maxLength="300"
+            name="content"
+            value={this.state.content}
+            placeholder="Message"
+            onChange={(e) => this.setState({ [e.target.name]: e.target.value })}
+          ></textarea>
 
-            <button
-              className="saveButton"
-              disabled={!this.state.content + !this.state.title}
-              onClick={() => {
-                this.badWordCheck();
-                this.setState({ title: "", content: "", name: "" });
-              }}
-            >
-              Submit
-            </button>
-            {this.state.badWord && (
-              <div className="detectedBadWord">
-                Bad word detected! Your message was not submitted.
-              </div>
-            )}
-          </div>
+          <button
+            className="saveButton"
+            disabled={!this.state.content + !this.state.title}
+            onClick={() => {
+              this.badWordCheck();
+              this.setState({ title: "", content: "", name: "" });
+            }}
+          >
+            Submit
+          </button>
+          {this.state.badWord && (
+            <div className="detectedBadWord">
+              Bad word detected! Your message was not submitted.
+            </div>
+          )}
         </div>
       </div>
     );

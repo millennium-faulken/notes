@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { getNotes } from "../actions";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import NavBar from "./NavBar";
 import "./Notes.css";
 
 class NotesList extends Component {
@@ -19,7 +18,6 @@ class NotesList extends Component {
   render() {
     return (
       <div className="mainNote">
-        <NavBar />
         <div className="listing">
           {this.props.notes.map((note) => (
             <div className="singleNote" key={note._id}>
